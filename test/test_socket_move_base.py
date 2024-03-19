@@ -16,16 +16,54 @@ client.send(command.encode('utf-8'))
 response = client.recv(1024).decode()
 print(response)
 
-# command = '/api/map/list'
+# ======
+
+# command = '/api/markers/insert?name=end_point'
+# client.send(command.encode('utf-8'))
+# response = client.recv(1024).decode()
+# print(response)
+
+# command = '/api/markers/query_list'
+# client.send(command.encode('utf-8'))
+# # response = client.recv(1024).decode()
+# response = client.recv(4096).decode('utf-8')
+# print(response)
+
+# command = '/api/markers/delete'
+# client.send(command.encode('utf-8'))
+# response = client.recv(1024).decode()
+# print(response)
+
+# command = '/api/markers/count'
+# client.send(command.encode('utf-8'))
+# response = client.recv(1024).decode('utf-8')
+# print(response)
+
+command = '/api/markers/query_brief'
+client.send(command.encode('utf-8'))
+response = client.recv(1024).decode('utf-8')
+print(response)
+
+# ======
+
+command= '/api/move?marker=start_point'
+client.send(command.encode('utf-8'))
+response = client.recv(1024).decode()
+print(response)
+
+# command= '/api/move?markers=start_point,end_point'
+# client.send(command.encode('utf-8'))
+# response = client.recv(1024).decode()
+# print(response)
+
+# command= '/api/move/cancel'
 # client.send(command.encode('utf-8'))
 # response = client.recv(1024).decode()
 # print(response)
 
 
 
-# point2= '/api/move?marker=071901'
-# client.send(point2.encode('utf-8'))
-# data1 = client.recv(1024).decode()
-# point3='/api/move?marker=071902'
-# client.send(point3.encode('utf-8'))
-# data1 = client.recv(1024).decode()
+# command = '/api/map/list'
+# client.send(command.encode('utf-8'))
+# response = client.recv(1024).decode()
+# print(response)
