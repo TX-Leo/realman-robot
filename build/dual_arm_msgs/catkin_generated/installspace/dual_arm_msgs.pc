@@ -1,0 +1,8 @@
+prefix=/home/rm/catkin_ws/install
+
+Name: dual_arm_msgs
+Description: Description of dual_arm_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs rospy std_msgs roscpp

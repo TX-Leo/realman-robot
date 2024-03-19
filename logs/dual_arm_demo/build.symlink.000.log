@@ -1,0 +1,10 @@
+Symlinking /home/rm/catkin_ws/devel/lib/pkgconfig/dual_arm_demo.pc
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/inverse_kinematics_demo
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/api_moveJ_demo
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/obstacle_avoidance_left_arm
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/api_moveJ_P_demo
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/api_moveL_demo
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/forward_kinematics_demo
+Symlinking /home/rm/catkin_ws/devel/lib/dual_arm_demo/demo_recognize_target_pose
+Symlinking /home/rm/catkin_ws/devel/share/dual_arm_demo/cmake/dual_arm_demoConfig-version.cmake
+Symlinking /home/rm/catkin_ws/devel/share/dual_arm_demo/cmake/dual_arm_demoConfig.cmake

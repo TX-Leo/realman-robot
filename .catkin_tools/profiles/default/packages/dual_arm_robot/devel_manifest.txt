@@ -1,0 +1,2 @@
+dual_arm_robot/dual_arm_robot
+/home/rm/catkin_ws/devel/.private/dual_arm_robot/cmake.lock /home/rm/catkin_ws/devel/./cmake.lock

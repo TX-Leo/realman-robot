@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rm/catkin_ws/devel/.private/xf_mic_asr_offline_line/setup.sh

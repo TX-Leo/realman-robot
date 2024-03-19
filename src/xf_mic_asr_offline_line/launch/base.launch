@@ -1,0 +1,13 @@
+
+<launch>
+  <rosparam command="load" file="$(find xf_mic_asr_offline_line)/config/recognition_params.yaml" />
+
+  <node pkg="xf_mic_asr_offline_line" type="call_recognition" name="call_recognition" />
+  <node pkg="xf_mic_asr_offline_line" type="command_recognition" name="command_recognition" output="screen">
+    <param name="audio_path" type="string" value="$(find xf_mic_asr_offline_line)"/> 
+  </node> 
+  <node pkg="xf_mic_asr_offline_line" type="node_feedback" name="node_feedback" output="screen">
+    <param name="audio_path" type="string" value="$(find xf_mic_asr_offline_line)"/> 
+  </node>   
+
+</launch>

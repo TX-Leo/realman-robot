@@ -1,0 +1,4 @@
+Symlinking /home/rm/catkin_ws/devel/lib/pkgconfig/arm_control.pc
+Symlinking /home/rm/catkin_ws/devel/lib/arm_control/arm_control
+Symlinking /home/rm/catkin_ws/devel/share/arm_control/cmake/arm_controlConfig-version.cmake
+Symlinking /home/rm/catkin_ws/devel/share/arm_control/cmake/arm_controlConfig.cmake

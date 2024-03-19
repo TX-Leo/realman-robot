@@ -1,0 +1,8 @@
+prefix=/home/rm/catkin_ws/install
+
+Name: dual_arm_demo
+Description: Description of dual_arm_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

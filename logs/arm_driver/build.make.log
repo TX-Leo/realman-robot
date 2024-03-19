@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target arm_driver[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/arm_driver.dir/src/rm_driver.cpp.o[0m
+[ 66%] [32mBuilding C object CMakeFiles/arm_driver.dir/src/cJSON.c.o[0m
+[01m[Kcc1:[m[K [01;35m[Kwarning: [m[Kcommand line option ‘[01m[K-std=c++11[m[K’ is valid for C++/ObjC++ but not for C
+[100%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/arm_driver/lib/arm_driver/arm_driver[0m
+[100%] Built target arm_driver

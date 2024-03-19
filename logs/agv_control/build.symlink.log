@@ -1,0 +1,5 @@
+Symlinking /home/rm/catkin_ws/devel/lib/pkgconfig/agv_control.pc
+Symlinking /home/rm/catkin_ws/devel/lib/agv_control/yunjiAgv_moveTwist
+Symlinking /home/rm/catkin_ws/devel/lib/agv_control/agv_keyboard_teleop
+Symlinking /home/rm/catkin_ws/devel/share/agv_control/cmake/agv_controlConfig-version.cmake
+Symlinking /home/rm/catkin_ws/devel/share/agv_control/cmake/agv_controlConfig.cmake

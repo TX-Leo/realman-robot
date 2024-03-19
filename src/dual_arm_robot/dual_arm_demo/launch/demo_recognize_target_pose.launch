@@ -1,0 +1,23 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <launch>
+
+    <!-- 任务控制节点task_handler -->
+    <node  respawn="true" pkg="tf" type="static_transform_publisher" name="arm_camera_transform" args="0.17942884 -0.1636813 -0.01606396  0.2504177 -0.5145574 0.48599812 0.66055078 base_link camera_color_frame 100" >
+    </node>
+
+    <!-- realsense -->
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    </include>
+
+    <!-- 启动ArUco节点识别Marker标记物 -->
+    <include file="$(find aruco_ros)/launch/single_realsense.launch">
+    </include>
+
+    <!-- servo_controller -->
+    <node  respawn="true" pkg="servo_control" type="servo_controller" name="servo_controller" output="screen" >
+    </node>
+
+    <!-- demo_vi_grab -->
+    <node  respawn="true" pkg="dual_arm_demo" type="demo_recognize_target_pose" name="demo_recognize_target_pose" output="screen" >
+    </node>
+
+</launch>

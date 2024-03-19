@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ws_rm_75_robot/src/rm_75_robot/rm_control/cmake-build-debug/devel
+
+Name: rm_control
+Description: Description of rm_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs

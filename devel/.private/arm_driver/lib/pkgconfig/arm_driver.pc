@@ -1,0 +1,8 @@
+prefix=/home/rm/catkin_ws/devel/.private/arm_driver
+
+Name: arm_driver
+Description: Description of arm_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

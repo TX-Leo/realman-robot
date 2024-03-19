@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target demo_recognize_target_pose[0m
+[  7%] [32mBuilding CXX object CMakeFiles/demo_recognize_target_pose.dir/src/demo_recognize_target_pose.cpp.o[0m
+[35m[1mScanning dependencies of target api_moveL_demo[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/api_moveL_demo.dir/src/api_moveL_demo.cpp.o[0m
+[35m[1mScanning dependencies of target api_moveJ_P_demo[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/api_moveJ_P_demo.dir/src/api_moveJ_P_demo.cpp.o[0m
+[ 28%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/demo_recognize_target_pose[0m
+[ 35%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/api_moveL_demo[0m
+[35m[1mScanning dependencies of target api_moveJ_demo[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/api_moveJ_demo.dir/src/api_moveJ_demo.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/api_moveJ_P_demo[0m
+[ 50%] Built target api_moveL_demo
+[ 50%] Built target demo_recognize_target_pose
+[35m[1mScanning dependencies of target inverse_kinematics_demo[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/inverse_kinematics_demo.dir/src/inverse_kinematics_demo.cpp.o[0m
+[ 57%] Built target api_moveJ_P_demo
+[ 64%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/api_moveJ_demo[0m
+[ 71%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/inverse_kinematics_demo[0m
+[ 71%] Built target api_moveJ_demo
+[ 71%] Built target inverse_kinematics_demo
+[35m[1mScanning dependencies of target obstacle_avoidance_left_arm[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/obstacle_avoidance_left_arm.dir/src/obstacle_avoidance_left_arm.cpp.o[0m
+[35m[1mScanning dependencies of target forward_kinematics_demo[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/forward_kinematics_demo.dir/src/forward_kinematics_demo.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/forward_kinematics_demo[0m
+[ 92%] Built target forward_kinematics_demo
+[100%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/dual_arm_demo/obstacle_avoidance_left_arm[0m
+[100%] Built target obstacle_avoidance_left_arm

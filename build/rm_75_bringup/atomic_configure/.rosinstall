@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rm/catkin_ws/devel/.private/rm_75_bringup/setup.sh

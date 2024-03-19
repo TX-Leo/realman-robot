@@ -1,0 +1,1 @@
+/home/rm/catkin_ws/devel/.private/xf_mic_asr_offline_line/share/xf_mic_asr_offline_line/cmake/xf_mic_asr_offline_line-msg-extras.cmake

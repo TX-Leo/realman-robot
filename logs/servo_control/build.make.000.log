@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target servo_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/servo_controller.dir/src/servo_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/servo_control/lib/servo_control/servo_controller[0m
+[100%] Built target servo_controller

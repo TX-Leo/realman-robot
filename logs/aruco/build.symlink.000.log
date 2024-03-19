@@ -1,0 +1,4 @@
+Symlinking /home/rm/catkin_ws/devel/lib/libaruco.so
+Symlinking /home/rm/catkin_ws/devel/lib/pkgconfig/aruco.pc
+Symlinking /home/rm/catkin_ws/devel/share/aruco/cmake/arucoConfig-version.cmake
+Symlinking /home/rm/catkin_ws/devel/share/aruco/cmake/arucoConfig.cmake

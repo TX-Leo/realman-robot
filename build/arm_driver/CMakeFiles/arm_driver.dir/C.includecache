@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rm/catkin_ws/src/dual_arm_robot/arm_driver/src/cJSON.c
+string.h
+-
+stdio.h
+-
+math.h
+-
+stdlib.h
+-
+float.h
+-
+limits.h
+-
+ctype.h
+-
+cJSON.h
+/home/rm/catkin_ws/src/dual_arm_robot/arm_driver/src/cJSON.h
+
+/home/rm/catkin_ws/src/dual_arm_robot/arm_driver/src/cJSON.h
+

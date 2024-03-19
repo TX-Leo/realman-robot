@@ -1,0 +1,1 @@
+/home/rm/catkin_ws/devel/.private/rm_75_msgs/share/roseus/ros/rm_75_msgs/manifest.l

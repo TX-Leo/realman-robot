@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dual_arm_description
+    relative_path: urdf/dual_arm_rm65.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/dual_arm_description.srdf
+  CONFIG:
+    author_name: Wang
+    author_email: Miracove@realman-robot.com
+    generated_timestamp: 1681356512

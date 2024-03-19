@@ -1,0 +1,1 @@
+/home/rm/catkin_ws/devel/.private/dual_arm_demo/lib/pkgconfig/dual_arm_demo.pc

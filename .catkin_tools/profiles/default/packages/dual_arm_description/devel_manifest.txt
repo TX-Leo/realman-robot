@@ -1,0 +1,5 @@
+dual_arm_robot/dual_arm_description
+/home/rm/catkin_ws/devel/.private/dual_arm_description/cmake.lock /home/rm/catkin_ws/devel/./cmake.lock
+/home/rm/catkin_ws/devel/.private/dual_arm_description/lib/pkgconfig/dual_arm_description.pc /home/rm/catkin_ws/devel/lib/pkgconfig/dual_arm_description.pc
+/home/rm/catkin_ws/devel/.private/dual_arm_description/share/dual_arm_description/cmake/dual_arm_descriptionConfig.cmake /home/rm/catkin_ws/devel/share/dual_arm_description/cmake/dual_arm_descriptionConfig.cmake
+/home/rm/catkin_ws/devel/.private/dual_arm_description/share/dual_arm_description/cmake/dual_arm_descriptionConfig-version.cmake /home/rm/catkin_ws/devel/share/dual_arm_description/cmake/dual_arm_descriptionConfig-version.cmake

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>dual_arm_robot</name>
+  <version>1.0.0</version>
+  <description>
+	Description, drivers, control, msgs, demo, moveit and servo for Dual Arm Robot.
+  </description>
+
+  <author email="gubishan@realman-robot.com">Gu Bishan</author>
+  <maintainer email="gubishan@realman-robot.com">Gu Bishan</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>dual_arm_msgs</run_depend>
+  <run_depend>arm_driver</run_depend>
+  <run_depend>arm_control</run_depend>
+  <run_depend>dual_arm_description</run_depend>
+  <run_depend>dual_arm_65_moveit_config</run_depend>
+  <run_depend>servo_control</run_depend>
+  <run_depend>agv_control</run_depend>
+  <run_depend>dual_arm_demo</run_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+     <metapackage/>
+  </export>
+</package>

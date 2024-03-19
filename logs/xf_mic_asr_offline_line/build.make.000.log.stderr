@@ -1,0 +1,4 @@
+[01m[K/home/rm/catkin_ws/src/xf_mic_asr_offline_line/src/voice_control.cpp:[m[K In function ‘[01m[Kbool Get_Offline_Recognise_Result(xf_mic_asr_offline_line::Get_Offline_Result_srv::Request&, xf_mic_asr_offline_line::Get_Offline_Result_srv::Response&)[m[K’:
+[01m[K/home/rm/catkin_ws/src/xf_mic_asr_offline_line/src/voice_control.cpp:212:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   whole_result = [01;35m[K""[m[K;
+                  [01;35m[K^~[m[K

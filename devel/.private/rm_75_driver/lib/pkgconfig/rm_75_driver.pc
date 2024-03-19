@@ -1,0 +1,8 @@
+prefix=/home/rm/catkin_ws/devel/.private/rm_75_driver
+
+Name: rm_75_driver
+Description: Description of rm_75_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
