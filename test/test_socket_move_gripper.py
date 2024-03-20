@@ -8,7 +8,8 @@ def send_cmd(client, cmd_6axis):
     return True
 
 # IP and port configuration
-ip = '192.168.10.18'
+# ip = '192.168.10.18'
+ip = '192.168.10.19'
 port_no = 8080
 
 # Create a socket and connect to the server
@@ -39,16 +40,19 @@ time.sleep(2)
 print(" 设置30% 力值 （写操作）")
 
 while True:
-    point6_00 = '{"command":"write_single_register","port":1,"address":259,"data":500, "device":1}\r\n'
-    _ = send_cmd(client, cmd_6axis=point6_00)
-    time.sleep(3)
-    print("设置 500 位置 ")
-    point6_00 = '{"command":"write_single_register","port":1,"address":259,"data":1000, "device":1}\r\n'
-    _ = send_cmd(client, cmd_6axis=point6_00)
-    time.sleep(3)
-    print("设置 1000 位置 ")
     point6_00 = '{"command":"write_single_register","port":1,"address":259,"data":200, "device":1}\r\n'
     _ = send_cmd(client, cmd_6axis=point6_00)
     time.sleep(3)
     print("设置 200 位置 ")
-
+    point6_00 = '{"command":"write_single_register","port":1,"address":259,"data":500, "device":1}\r\n'
+    _ = send_cmd(client, cmd_6axis=point6_00)
+    time.sleep(2)
+    print("设置 500 位置 ")
+    point6_00 = '{"command":"write_single_register","port":1,"address":259,"data":1000, "device":1}\r\n'
+    _ = send_cmd(client, cmd_6axis=point6_00)
+    time.sleep(2)
+    print("设置 1000 位置 ")
+    point6_00 = '{"command":"write_single_register","port":1,"address":259,"data":0, "device":1}\r\n'
+    _ = send_cmd(client, cmd_6axis=point6_00)
+    time.sleep(2)
+    print("设置 0 位置 ")
