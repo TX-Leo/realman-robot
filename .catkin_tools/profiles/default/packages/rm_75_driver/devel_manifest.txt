@@ -1,6 +1,0 @@
-rm_75_robot/rm_75_driver
-/home/rm/catkin_ws/devel/.private/rm_75_driver/cmake.lock /home/rm/catkin_ws/devel/./cmake.lock
-/home/rm/catkin_ws/devel/.private/rm_75_driver/lib/pkgconfig/rm_75_driver.pc /home/rm/catkin_ws/devel/lib/pkgconfig/rm_75_driver.pc
-/home/rm/catkin_ws/devel/.private/rm_75_driver/lib/rm_75_driver/rm_driver /home/rm/catkin_ws/devel/lib/rm_75_driver/rm_driver
-/home/rm/catkin_ws/devel/.private/rm_75_driver/share/rm_75_driver/cmake/rm_75_driverConfig.cmake /home/rm/catkin_ws/devel/share/rm_75_driver/cmake/rm_75_driverConfig.cmake
-/home/rm/catkin_ws/devel/.private/rm_75_driver/share/rm_75_driver/cmake/rm_75_driverConfig-version.cmake /home/rm/catkin_ws/devel/share/rm_75_driver/cmake/rm_75_driverConfig-version.cmake

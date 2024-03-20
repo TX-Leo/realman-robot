@@ -1,5 +1,0 @@
-learnning_communication
-/home/rm/catkin_ws/devel/.private/learnning_communication/cmake.lock /home/rm/catkin_ws/devel/./cmake.lock
-/home/rm/catkin_ws/devel/.private/learnning_communication/lib/pkgconfig/learnning_communication.pc /home/rm/catkin_ws/devel/lib/pkgconfig/learnning_communication.pc
-/home/rm/catkin_ws/devel/.private/learnning_communication/share/learnning_communication/cmake/learnning_communicationConfig-version.cmake /home/rm/catkin_ws/devel/share/learnning_communication/cmake/learnning_communicationConfig-version.cmake
-/home/rm/catkin_ws/devel/.private/learnning_communication/share/learnning_communication/cmake/learnning_communicationConfig.cmake /home/rm/catkin_ws/devel/share/learnning_communication/cmake/learnning_communicationConfig.cmake

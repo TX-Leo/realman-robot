@@ -1,2 +1,0 @@
-rm_75_robot/rm_75_robot
-/home/rm/catkin_ws/devel/.private/rm_75_robot/cmake.lock /home/rm/catkin_ws/devel/./cmake.lock

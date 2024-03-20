@@ -1,7 +1,0 @@
-dual_arm_robot/agv_control
-/home/rm/catkin_ws/devel/.private/agv_control/cmake.lock /home/rm/catkin_ws/devel/./cmake.lock
-/home/rm/catkin_ws/devel/.private/agv_control/lib/pkgconfig/agv_control.pc /home/rm/catkin_ws/devel/lib/pkgconfig/agv_control.pc
-/home/rm/catkin_ws/devel/.private/agv_control/lib/agv_control/yunjiAgv_moveTwist /home/rm/catkin_ws/devel/lib/agv_control/yunjiAgv_moveTwist
-/home/rm/catkin_ws/devel/.private/agv_control/lib/agv_control/agv_keyboard_teleop /home/rm/catkin_ws/devel/lib/agv_control/agv_keyboard_teleop
-/home/rm/catkin_ws/devel/.private/agv_control/share/agv_control/cmake/agv_controlConfig-version.cmake /home/rm/catkin_ws/devel/share/agv_control/cmake/agv_controlConfig-version.cmake
-/home/rm/catkin_ws/devel/.private/agv_control/share/agv_control/cmake/agv_controlConfig.cmake /home/rm/catkin_ws/devel/share/agv_control/cmake/agv_controlConfig.cmake

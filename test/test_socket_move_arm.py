@@ -1,9 +1,9 @@
 import socket
-import time
-import json
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = '192.168.10.18'
+# host = '192.168.10.19'
+
 port = 8080
 print('connecting...')
 client.connect((host, port))
