@@ -1,5 +1,5 @@
 import serial
-
+import time
 # 打开串口
 ser = serial.Serial('/dev/ttyUSB0', 9600)
 
@@ -40,7 +40,21 @@ def get_servo_angle(servo_id):
     print(f"Get Servo Angle: {angle}")
 
 get_servo_angle(1)  # 获取舵机 ID 为 1 的舵机的角度位置
-servo_move(1000, 2, 300)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+
+
+
+servo_move(500, 1, 300)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+time.sleep(1)
+servo_move(500, 2, 300)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+time.sleep(1)
+servo_move(500, 1, 800)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+time.sleep(1)
+servo_move(500, 2, 800)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+time.sleep(1)
+servo_move(500, 1, 500)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+time.sleep(1)
+servo_move(500, 2, 500)  # 控制舵机 ID 为 1 的舵机转动到 90 度的位置
+time.sleep(1)
 
 # 关闭串口
 ser.close()

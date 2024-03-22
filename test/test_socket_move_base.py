@@ -18,7 +18,7 @@ print(response)
 
 # ======
 
-# command = '/api/markers/insert?name=end_point'
+# command = '/api/markers/insert?name=test_point_2'
 # client.send(command.encode('utf-8'))
 # response = client.recv(1024).decode()
 # print(response)
@@ -26,7 +26,7 @@ print(response)
 # command = '/api/markers/query_list'
 # client.send(command.encode('utf-8'))
 # # response = client.recv(1024).decode()
-# response = client.recv(4096).decode('utf-8')
+# response = client.recv(10000).decode('utf-8')
 # print(response)
 
 # command = '/api/markers/delete'
@@ -39,22 +39,22 @@ print(response)
 # response = client.recv(1024).decode('utf-8')
 # print(response)
 
-command = '/api/markers/query_brief'
-client.send(command.encode('utf-8'))
-response = client.recv(1024).decode('utf-8')
-print(response)
+# command = '/api/markers/query_brief'
+# client.send(command.encode('utf-8'))
+# response = client.recv(1024).decode('utf-8')
+# print(response)
 
 # ======
 
-command= '/api/move?marker=start_point'
-client.send(command.encode('utf-8'))
-response = client.recv(1024).decode()
-print(response)
-
-# command= '/api/move?markers=start_point,end_point'
+# command= '/api/move?marker=test_point'
 # client.send(command.encode('utf-8'))
 # response = client.recv(1024).decode()
 # print(response)
+
+command= '/api/move?markers=test_point,test_point_2'
+client.send(command.encode('utf-8'))
+response = client.recv(1024).decode()
+print(response)
 
 # command= '/api/move/cancel'
 # client.send(command.encode('utf-8'))
