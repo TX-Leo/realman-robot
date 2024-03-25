@@ -1,1 +1,0 @@
-/home/rm/catkin_ws/devel/.private/xf_mic_asr_offline_line/share/roseus/ros/xf_mic_asr_offline_line/srv/Get_Major_Mic_srv.l

@@ -1,6 +1,0 @@
-[35m[1mScanning dependencies of target rm_driver[0m
-[ 33%] [32mBuilding C object CMakeFiles/rm_driver.dir/src/cJSON.c.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/rm_driver.dir/src/rm_driver.cpp.o[0m
-[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[Kcommand line option ‘[01m[K-std=c99[m[K’ is valid for C/ObjC but not for C++
-[100%] [32m[1mLinking CXX executable /home/rm/catkin_ws/devel/.private/rm_75_driver/lib/rm_75_driver/rm_driver[0m
-[100%] Built target rm_driver

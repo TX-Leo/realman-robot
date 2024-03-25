@@ -1,7 +1,0 @@
-/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
-/usr/bin/ld: warning: libopencv_imgproc.so.4.1, needed by /home/rm/catkin_ws/devel/.private/aruco/lib/libaruco.so, may conflict with libopencv_imgproc.so.3.2
-/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/rm/catkin_ws/devel/.private/aruco/lib/libaruco.so, may conflict with libopencv_core.so.3.2
-/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
-/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/rm/catkin_ws/devel/.private/aruco/lib/libaruco.so, may conflict with libopencv_core.so.3.2
-/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/melodic/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.1
-/usr/bin/ld: warning: libopencv_core.so.4.1, needed by /home/rm/catkin_ws/devel/.private/aruco/lib/libaruco.so, may conflict with libopencv_core.so.3.2

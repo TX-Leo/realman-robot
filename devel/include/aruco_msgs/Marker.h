@@ -1,1 +1,0 @@
-/home/rm/catkin_ws/devel/.private/aruco_msgs/include/aruco_msgs/Marker.h

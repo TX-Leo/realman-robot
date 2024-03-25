@@ -1,2 +1,46 @@
-.catkin_tools
-.vscode
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略编译生成的文件或文件夹
+# /build
+# /dist
+# /*.exe
+# /*.dll
+# /*.so
+# /*.dylib
+
+# 忽略Python相关的文件或文件夹
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 忽略IDE或编辑器生成的文件或文件夹
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+
+# 忽略日志文件
+*.log
+
+# 忽略临时文件
+*.tmp
+
+# 忽略依赖管理工具生成的文件或文件夹
+/node_modules/
+/yarn.lock
+/pip-lock.txt
+
+# 忽略配置文件
+.env
+
+# 忽略敏感信息文件
+secrets.yml
+database.yml
+
+# 忽略生成的文档
+# /docs
+
+# 忽略其他特定项目生成的文件或文件夹

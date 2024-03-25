@@ -1,8 +1,0 @@
-prefix=/home/rm/catkin_ws/install
-
-Name: rm_75_demo
-Description: Description of rm_75_demo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

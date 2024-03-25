@@ -1,8 +1,0 @@
-prefix=/home/rm/catkin_ws/install
-
-Name: rm_75_msgs
-Description: Description of rm_75_msgs
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs rospy std_msgs roscpp

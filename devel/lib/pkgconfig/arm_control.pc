@@ -1,1 +1,0 @@
-/home/rm/catkin_ws/devel/.private/arm_control/lib/pkgconfig/arm_control.pc

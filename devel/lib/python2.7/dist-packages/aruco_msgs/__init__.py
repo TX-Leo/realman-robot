@@ -1,1 +1,0 @@
-/home/rm/catkin_ws/devel/.private/aruco_msgs/lib/python2.7/dist-packages/aruco_msgs/__init__.py

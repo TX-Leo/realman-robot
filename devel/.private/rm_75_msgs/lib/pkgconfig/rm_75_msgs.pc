@@ -1,8 +1,0 @@
-prefix=/home/rm/catkin_ws/devel/.private/rm_75_msgs
-
-Name: rm_75_msgs
-Description: Description of rm_75_msgs
-Version: 0.0.0
-Cflags: -I/home/rm/catkin_ws/devel/.private/rm_75_msgs/include -I/home/rm/catkin_ws/src/rm_75_robot/rm_75_msgs/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs rospy std_msgs roscpp

@@ -1,1 +1,0 @@
-/home/rm/catkin_ws/devel/.private/servo_control/lib/pkgconfig/servo_control.pc

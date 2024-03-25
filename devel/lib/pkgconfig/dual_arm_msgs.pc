@@ -1,1 +1,0 @@
-/home/rm/catkin_ws/devel/.private/dual_arm_msgs/lib/pkgconfig/dual_arm_msgs.pc
