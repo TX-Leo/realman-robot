@@ -5,10 +5,10 @@ from PIL import Image
 import open3d as o3d
 import torch
 
+sys.path.append("./src/")
 from camera import CamIntrinsic,RealSense
 from arm import Arm
-from grasper_package.graspnetAPI.graspnet_eval import GraspGroup
-from grasper_package.graspnetAPI.graspnet_eval import GraspGroup
+from grasper_package.graspnetAPI.graspnetAPI.graspnet_eval import GraspGroup
 from grasper_package.models.graspnet import GraspNet, pred_decode
 from grasper_package.dataset.graspnet_dataset import minkowski_collate_fn
 from grasper_package.utils.collision_detector import ModelFreeCollisionDetector
@@ -199,3 +199,16 @@ class Grasper:
         gg = self.get_grasp2camera(data_dict, cloud, point_left_up, point_right_bottom)
         t_grasp2robot,rpy_grasp2robot,width = self.get_grasp2base(gg)
         return t_grasp2robot,rpy_grasp2robot,width
+
+def test():
+    grasper = Grasper(camera=camera,
+                      arm=arm,
+                      rgb_img=rgb_img,
+                      d_img=d_img,
+                      checkpoint_path='src/cfg/checkpoints/np15000_graspness1e-1_bs4_lr1e-3_viewres_dataaug_fps_14D_epoch10.tar'
+                      )
+    grasper.process_data()
+    # t_grasp2robot,rpy_grasp2robot,width = grasper.get_grasp()
+
+if __name__ =="__main__":
+    test()

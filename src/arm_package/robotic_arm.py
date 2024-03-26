@@ -4874,7 +4874,7 @@ class Arm(Set_Joint, Get_Joint, Tcp_Config, Tool_Frame, Work_Frame, Arm_State, I
           ModbusRTU, Set_Lift, Force_Position, Algo, Online_programming, Expand, UDP, Program_list, Electronic_Fencel):
     pDll = ctypes.cdll.LoadLibrary(dllPath)
 
-    def __init__(self, dev_mode, ip, pCallback=None):
+    def __init__(self, ip, port=8080, dev_mode=RM75, pCallback=None):
         # RM_Callback = ctypes.CFUNCTYPE(None, CallbackData)
         self.code = dev_mode
         while self.code >= 10:
@@ -4891,7 +4891,7 @@ class Arm(Set_Joint, Get_Joint, Tcp_Config, Tool_Frame, Work_Frame, Arm_State, I
 
         # 连接机械臂
         byteIP = bytes(ip, "gbk")
-        self.nSocket = self.pDll.Arm_Socket_Start(byteIP, 8080, 200)  # 连接机械臂
+        self.nSocket = self.pDll.Arm_Socket_Start(byteIP, port, 200)  # 连接机械臂
 
         state = self.pDll.Arm_Socket_State(self.nSocket)  # 查询机械臂连接状态
 

@@ -27,12 +27,13 @@ class RealSense(object):
         self.width = width
         self.height = height
         if intrinsic_path:
-            with open(intrinsic_path, newline='') as csvfile:
-                reader = csv.reader(csvfile, delimiter=',')
-                data = []
-                for row in reader:
-                    data.append(row)
-            self.intrinsic = np.array(data, dtype=np.float32)
+            intrinsic_list = []
+            with open(intrinsic_path, 'r') as intrinsic_file:
+                line = intrinsic_file.readline()
+                numbers = line.split()
+                for number in numbers:
+                    intrinsic_list.append(float(number))
+            self.intrinsic = CamIntrinsic(intrinsic_list)
         else:
             self.intrinsic = self.init_intrinsic()
         if depth_scale_path:
@@ -43,11 +44,13 @@ class RealSense(object):
     def __str__(self):
         return f"RealSense(\n  width={self.width},\n  height={self.height},\n  {self.intrinsic.__str__()},\n  depth_scale={self.depth_scale}\n)"
     
-    def start_rs(self):
+    def start_rs(self,fps=30):
         self.pipeline = rs.pipeline()
         self.config = rs.config()
-        self.config.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, 30)
-        self.config.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, 30)
+        # self.config.enable_device('238122071696')  
+        self.config.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, fps)
+        self.config.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, fps)
+        # time.sleep(5)
         self.profile = self.pipeline.start(self.config)
 
     def close_rs(self):
@@ -157,10 +160,40 @@ class RealSense(object):
 def test():
     camera = RealSense(width=1280,
                        height=720,
-                       intrinsic_path=None,
-                       depth_scale_path=None
+                       intrinsic_path='./cfg/intrinsic.txt',
+                       depth_scale_path='./cfg/depth_scale.txt'
                        )
     print(camera)
+    camera.start_rs(fps=6)
+    time.sleep(3)
+    rgb_img,d_img = camera.capture_rgbd(rgb_save_path='../images/rgb_img.jpg',d_save_path='../images/d_img.jpg')
+    camera = camera.close_rs()
+
+def check_rs_resolution():
+
+    pipeline = rs.pipeline()
+    config = rs.config()
+    pipeline_profile = pipeline.start(config)
+    device = pipeline_profile.get_device()
+    depth_sensor = device.first_depth_sensor()
+
+    for profile in depth_sensor.get_stream_profiles():
+        if profile.stream_type() == rs.stream.depth:
+            width, height = profile.as_video_stream_profile().width(), profile.as_video_stream_profile().height()
+            print(f"Depth Stream Resolution: {width} x {height}")
+
+    for profile in device.query_sensors()[1].get_stream_profiles():
+        if profile.stream_type() == rs.stream.color:
+            width, height = profile.as_video_stream_profile().width(), profile.as_video_stream_profile().height()
+            print(f"Color Stream Resolution: {width} x {height}")
+
+def get_serial_num():
+    devices = rs.context().query_devices()
+    for dev in devices:
+        serial_number = dev.get_info(rs.camera_info.serial_number)
+        print(f"Device: {serial_number}")
 
 if __name__ == "__main__":
     test()
+    # check_rs_resolution()
+    # get_serial_num()
