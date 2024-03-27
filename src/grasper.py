@@ -64,11 +64,11 @@ class Grasper:
         point_right_bottom = (point_x, point_y, point_z)
 
         # generate cloud
-        cloud = self.camera.create_point_cloud_from_depth_image(depth) #720,1080,3
+        cloud = self.camera.create_point_cloud_from_depth_image(depth) #720,1280,3
 
         # get valid points
         depth_mask = (depth > 0)
-        workspace_mask = np.array(Image.open('./cfg/workspace_mask.png')) #[720,1280][241false,978false]
+        workspace_mask = np.array(Image.open('src/cfg/workspace_mask.png')) #[720,1280][241false,978false]
         mask = (workspace_mask & depth_mask)
 
         cloud_masked = cloud[mask] #51225,3
@@ -139,12 +139,10 @@ class Grasper:
             gg = gg[:50]
 
         # grasp pose is in workspace?
-        # TODO begin
         for i in range(len(gg)-1,-1,-1):
             if gg[i].translation[0]< point_left_up[0]+0.02 or gg[i].translation[0] >point_right_bottom[0]-0.02\
                     or gg[i].translation[1]<point_left_up[1]+0.02 or gg[i].translation[1]>point_right_bottom[1]-0.02:
                 gg.remove(i)
-        # TODO end
 
         if len(gg)==0:
             print("detect nothing or have no grasp pose ")
@@ -197,8 +195,8 @@ class Grasper:
     def get_grasp(self):
         data_dict, cloud, point_left_up, point_right_bottom = self.process_data()
         gg = self.get_grasp2camera(data_dict, cloud, point_left_up, point_right_bottom)
-        t_grasp2robot,rpy_grasp2robot,width = self.get_grasp2base(gg)
-        return t_grasp2robot,rpy_grasp2robot,width
+        # t_grasp2robot,rpy_grasp2robot,width = self.get_grasp2base(gg)
+        # return t_grasp2robot,rpy_grasp2robot,width
 
 def test():
     grasper = Grasper(camera=camera,

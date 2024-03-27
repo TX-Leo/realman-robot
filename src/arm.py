@@ -2,7 +2,9 @@
 import numpy as np
 import math
 import csv
+import sys
 
+sys.path.append("./src/")
 from arm_package.robotic_arm import Arm as ArmBase
 
 class Arm():

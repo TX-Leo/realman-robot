@@ -1,7 +1,6 @@
 setup.py
-/media/randy/299D817A2D97AD94/xxw/graspness/knn/src/vision.cpp
-/media/randy/299D817A2D97AD94/xxw/graspness/knn/src/cpu/knn_cpu.cpp
-/media/randy/299D817A2D97AD94/xxw/graspness/knn/src/cuda/knn.cu
+/home/rm/realman-robot/src/grasper_package/knn/src/vision.cpp
+/home/rm/realman-robot/src/grasper_package/knn/src/cpu/knn_cpu.cpp
 knn_pytorch.egg-info/PKG-INFO
 knn_pytorch.egg-info/SOURCES.txt
 knn_pytorch.egg-info/dependency_links.txt

@@ -15,9 +15,9 @@ sys.path.append(ROOT_DIR)
 
 from models.backbone_resunet14 import MinkUNet14D
 from models.modules import ApproachNet, GraspableNet, CloudCrop, SWADNet
-from loss_utils import GRASP_MAX_WIDTH, NUM_VIEW, NUM_ANGLE, NUM_DEPTH, GRASPNESS_THRESHOLD, M_POINT
-from label_generation import process_grasp_labels, match_grasp_view_and_label, batch_viewpoint_params_to_matrix
-from pointnet2.pointnet2_utils import furthest_point_sample, gather_operation
+from grasper_package.utils.loss_utils import GRASP_MAX_WIDTH, NUM_VIEW, NUM_ANGLE, NUM_DEPTH, GRASPNESS_THRESHOLD, M_POINT
+from grasper_package.utils.label_generation import process_grasp_labels, match_grasp_view_and_label, batch_viewpoint_params_to_matrix
+# from pointnet2.pointnet2_utils import furthest_point_sample, gather_operation
 
 
 class GraspNet(nn.Module):

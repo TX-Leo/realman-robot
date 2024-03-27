@@ -12,7 +12,7 @@ import collections.abc as container_abcs
 from torch.utils.data import Dataset
 from tqdm import tqdm
 import MinkowskiEngine as ME
-from data_utils import CameraInfo, transform_point_cloud, create_point_cloud_from_depth_image, get_workspace_mask
+from grasper_package.utils.data_utils import CameraInfo, transform_point_cloud, create_point_cloud_from_depth_image, get_workspace_mask
 
 
 class GraspNetDataset(Dataset):

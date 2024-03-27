@@ -50,7 +50,6 @@ class RealSense(object):
         # self.config.enable_device('238122071696')  
         self.config.enable_stream(rs.stream.depth, self.width, self.height, rs.format.z16, fps)
         self.config.enable_stream(rs.stream.color, self.width, self.height, rs.format.bgr8, fps)
-        # time.sleep(5)
         self.profile = self.pipeline.start(self.config)
 
     def close_rs(self):
@@ -100,10 +99,17 @@ class RealSense(object):
 
     def capture_rgbd(self,rgb_save_path=None,d_save_path=None):
         frames = self.pipeline.wait_for_frames()
-        color = frames.get_color_frame()
-        depth = frames.get_depth_frame()
-        rgb_img=np.asarray(color.get_data())
-        d_img=np.asarray(depth.get_data())
+        # color = frames.get_color_frame()
+        # depth = frames.get_depth_frame()
+        # rgb_img=np.asarray(color.get_data())
+        # d_img=np.asarray(depth.get_data())
+        # align
+        align = rs.align(align_to=rs.stream.color)
+        aligned_frames = align.process(frames)
+        aligned_depth_frame = aligned_frames.get_depth_frame()
+        color_frame = aligned_frames.get_color_frame()
+        d_img = np.asanyarray(aligned_depth_frame.get_data())
+        rgb_img = np.asanyarray(color_frame.get_data())
         if rgb_save_path is not None:
             cv2.imwrite(rgb_save_path,rgb_img)
         if d_save_path is not None:
